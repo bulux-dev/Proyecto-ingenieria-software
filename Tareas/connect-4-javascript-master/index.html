@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>4 en linea</title>
+    <style>
+        td {
+            background-color: #2993bd;
+            border: 0px !important;
+            padding: 5px !important;
+        }
+        
+        .img-player {
+            max-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center" id="app">
+        <div class="row justify-content-center">
+
+            <div class="table-responsive col-12 mx-auto">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th v-for="i in COLUMNS">
+                                <button :disabled="!canPlay" @click="makeMove(i)" class="btn btn-warning">agregar ficha&nbsp;<i class="fa fa-arrow-down"></i></button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="row in board">
+                            <td v-for="cell in row">
+                                <img class="img-fluid img-player" :src="cellImage(cell)" alt="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="vue.js"></script>
+        <script src="sweetalert2.all.min.js"></script>
+        <script src="connect4.js"></script>
+</body>
+
+</html>
