@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../Tareas/connect-4-javascript-master"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "VStudio"
+    }
+}

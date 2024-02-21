@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="estilo/style.css">
+    <script src="js/validar.js"></script>
+    <script src="http://www.google.com/recaptcha/api.js"></script>
+    <script src="js/conexion.js"></script>
+    <head>
+        <meta charset="utf-8">
+            <title>Desarrollo web</title>
+    </head>
+    <form action="conection.php" method="post" onsubmit="validateEmail()">
+        <div class="elem-group">
+            <br for ="title">Datos de alumno</br>
+            <br for ="title">Numero de carnet</br>
+                <label for "carnet">Codigo de carrera: </label>
+                    <input type="number" id="codigo_carrera" name="carrera_codigo" placehodler="0000" min="999" max ="9999" required>
+        </div>
+        <div>
+            <label for "año">Año de inscripcion: </label>
+                <input type="number" id="year_carrera" name="carrera_year" placehodler="18" min="00" max ="99" required>
+        </div>
+        <div>
+        <label for "carnet">Numero de estudiante: </label>
+            <input type="number" id="codigo_alumno" name="alumno_codigo" placehodler="631" min="001" max "9999" required>
+        </div>
+        <div class="elem-group">
+            <label for "Student_name">Nombre del estudiante: </label>
+                <input type="text" id="name" name="visitor_name" placeholder="Daniel Bulux" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+            <label for "fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha" name="fecha_student" placeholder="15/10/1997" required>
+        </div>
+        <div class="elem-group">
+            <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="visitor_email" placeholder="ejemplo@umg.edu.gt" oninput="verificarumg()" required>
+                <button type="button" id="validate" onclick="validateEmail()">Validar</button>
+        </div>
+        <div class="elem-group">
+            <div class="g-recaptcha" data-sitekey="6Ld0dpAnAAAAAL9Wg66UQvFrn2fjq6P4zl-8NrJD" data-callback="verifyCaptcha"></div>
+        </div>
+        <div id="error"></div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</html>

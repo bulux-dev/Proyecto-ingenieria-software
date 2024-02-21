@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(69, 75, 77);
+}
+
+title {
+    color: whitesmoke;
+}
+
+h1 {
+    color: rgb(110, 110, 228);
+}
+
+p {
+    color: rgb(155, 68, 68);
+}
+
+label {
+    color: rgb(255, 255, 255);
+}
+
+br {
+    color: white;
+}

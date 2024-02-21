@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema de votacion</title>
+        <h1>Sistema de votacion</h1>
+        <script>
+            // Definimos los dos candidatos
+const candidato1 = "Candidato 1";
+const candidato2 = "Candidato 2";
+
+// Inicializamos el contador de votos
+let votosCandidato1 = 0;
+let votosCandidato2 = 0;
+
+// Función para votar
+function votar(candidato) {
+  if (candidato === candidato1) {
+    votosCandidato1++;
+  } else if (candidato === candidato2) {
+    votosCandidato2++;
+  }
+}
+
+// Función para mostrar los resultados
+function mostrarResultados() {
+  console.log("Resultados de la votación:");
+  console.log("Candidato 1:", votosCandidato1);
+  console.log("Candidato 2:", votosCandidato2);
+}
+
+// Bucle principal
+while (true) {
+  // Mostramos los candidatos
+  console.log("¿Por quién quieres votar?");
+  console.log("1.", candidato1);
+  console.log("2.", candidato2);
+
+  // Pedimos el voto del usuario
+  const voto = prompt("Elige una opción: ");
+
+  // Votamos
+  votar(voto);
+
+  // Mostramos los resultados si se ha votado por ambos candidatos
+  if (votosCandidato1 > 0 && votosCandidato2 > 0) {
+    mostrarResultados();
+    break;
+  }
+}
+        </script>
+    </head>
+</html>

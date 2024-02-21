@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--API PARA RECAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <form action=""  >
+            <fieldset>
+                <legend>Formulario de registro estudiantes</legend>
+       <div class="campos">
+        <label for="carnet">Carnet: </label>
+        <input type="text" id="carnet">
+       </div>
+
+       <div class="campos">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre">
+
+
+       </div>
+       <div class="campos">
+        <label for="fecha nacimiento">Fecha de nacimiento: </label>
+        <input type="date" id="fnacimiento">
+       </div>
+       <div class="campos">
+        <label for="correo">Correo: </label>
+        <input type="text" id="correo">
+
+       </div>
+       <div class="campos">
+        	   
+        <!--CONTENEDOR DONDE APARECERA EL CAMPO (ABAJO DE LOS CAMPOS DEL FORMULARIO)-->
+        <div class="g-recaptcha" data-sitekey="6Ld0dpAnAAAAAL9Wg66UQvFrn2fjq6P4zl-8NrJD" data-callback="verifyCaptcha"></div>
+        <!--CONTENEDOR DONDE APARECERA SI EL RECAPTCHA NO FUE MARCADO-->
+        <div id="error"></div>
+        <!--BOTONES-->
+        <button onclick="validarCampos(event)">Validar</button>
+        <button onclick="agregar()">Guardar datos</button>
+       </div>
+   
+        </fieldset>
+        </form>
+
+    <script src="test.js"></script>
+    <script src="conexionbd.js"></script>
+
+</body>
+</html>

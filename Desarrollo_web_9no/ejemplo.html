@@ -1,0 +1,102 @@
+<form action="contact.php" method="post"> 
+	<div class="elem-group"> 
+		<br for ="title">Datos de alumno</br>
+		<label for "carnet">Numero de carnet</label>
+			<input type="number" id="carnet" name="carnet_student" placehodler ="numero de carnet ejemplo" requiered>
+
+	</div>
+	<div>
+		<label for="name">Nombre</label> 
+			<input type="text" id="name" name="visitor_name" placeholder="Nombre de ejemplo" pattern=[A-Z\sa-z]{3,20} required> 	
+	</div> 
+
+	<div class="elem-group">
+		<label for "fecha">Fecha de nacimiento</label>
+			<input type="date" id="fecha" name="fecha_student" placeholder ="fecha de nacimiento ej" required>
+	</div>
+
+	<div class="elem-group">
+			<label for="email">Correo electrónico</label> 
+				<input type="email" id="email" name="visitor_email" placeholder="ejemplo@umg.edu.gt" oninput="verificarumg()" required>
+				<br>
+					<input "checkbox" id="esumg"onchange="verificarumg()">
+					<label for="esumg">Es un correo UMG?</label>
+				<br>
+			<p id="resultado"></p>
+			<script>
+				var correoInput=document.getElementById("email");
+				var esUMGCheckbox = document.getElementById("esUMG");
+				var resultado = document.getElementById("resultado");
+
+				var correo = correoInput.value;
+				var esUMG = esUMGCheckbox.checked;
+
+				if(esUMG && email.includes("@miumg.edu.gt")){
+					resultado.textContent = "es correo UMG";
+				}else{resultado.textContent"No es correo UMG"
+			}else{resultado.textContent=""}
+
+
+
+			</script>
+			<!--
+				    <script>
+        function verificarGmail() {
+            var correoInput = document.getElementById("correo");
+            var esGmailCheckbox = document.getElementById("esGmail");
+            var resultado = document.getElementById("resultado");
+
+            var correo = correoInput.value;
+            var esGmail = esGmailCheckbox.checked;
+
+            if (esGmail && correo.includes("@gmail.com")) {
+                resultado.textContent = "¡Es un correo de Gmail!";
+            } else if (!esGmail && !correo.includes("@gmail.com")) {
+                resultado.textContent = "No es un correo de Gmail.";
+            } else {
+                resultado.textContent = "";
+            }
+        }
+    </script>
+
+			-->
+	</div> 
+	<div class="elem-group">
+		<button type="button" id="validate" onclick = "mostraralerta()">Validar</button> 
+
+		
+
+		<!--<script>
+			function detectarPalabra()
+			{
+				var palabraBuscada = "umg.edu.gt";
+				var parrafo = document.getElement("visitor_email").textContent;
+				if(parrafo.includes("palabraBuscada"))
+					alert("correcto");
+			}
+		</script>
+		<script>
+			function mostraralerta(){
+				alert("alert");
+			}
+		</script>-->
+		<!--		<script>
+			function detectarPalabra(){
+				var palabraBuscada = "umg.edu.gt";
+				var parrafo = document.getElement("visitor_email").textContent;
+				if(parrafo.includes(palabraBuscada)){
+					alert("Correcto");}
+					else {alert("incorrecto");}
+				
+			} 
+			detectarPalabra();
+		</script> 
+	-->
+</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+
+
+
+</form>

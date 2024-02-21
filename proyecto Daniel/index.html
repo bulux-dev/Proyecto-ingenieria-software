@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <script src="js/validacion.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <title>Ingrese nuevo empleado</title>
+    </head>
+    <form action="conexion.php" name="" method="post">
+        <div class="elem-group">
+            <br for="title">Codigo: </br>
+            <input type="number" id="codigo_empleado" name="codigo_empleado" placeholder="0000" required>
+            <br for="title">Nombre: </br>
+            <input type="text" id="nombre_empleado" name="nombre_empleado" placeholder="Ingrese nombre" required>
+            <div>
+                <br for="title">Status</br>
+                <select id="status" name="status" aria-placeholder="-" required>
+                    <option>-</option>
+                    <option>Activo</option>
+                    <option>Inactivo</option>
+                </select>
+            </div>
+            <div class="elem-group">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</html>
