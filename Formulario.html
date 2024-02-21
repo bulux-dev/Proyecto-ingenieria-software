@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <script src = "js/inicio-formulario.js"></script>
+        <title>Inscripcion</title>
+    </head>
+    <body>
+        <h1>Formulario de inscripcion</h1>
+        <form action =/action_page.php" method = "post">
+        <label for ="nombre">Nombre: </label>
+        <input type = "text" id = "nombre" name = "nombre" placeholder="Ingresa tu nombre">
+        <br>
+        <label for ="email">Email: </label>
+        <input type = "email" id = "email" name = "email" placeholder="Ingresa tu email">
+        <br>
+        <label for ="codigo_carrera">Codigo carrera: </label>
+        <input type = "number" id = "codigo_carrera" name = "codigo_carrera" min = "1000" max = "9999" placeholder="Ej: 1490">
+        <br>
+        <label for ="anio">anio de carne: </label>
+        <input type = "number" id = "badge_number" name = "badge_number" min = "01" max = "99" placeholder="Ej: 24">
+        <br>
+        <label for ="numero_estudiante">Correlativo: </label>
+        <input type = "number" id = "correlativo" name = "correlativo" placeholder="1490-24-****">
+        <br><br>
+        <input type ="submit" value ="Enviar">
+        </form>
+        <button onclick = "window.location.href = 'inicio.html'">Inicio</button>
+    </body>
+</html>
