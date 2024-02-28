@@ -17,8 +17,8 @@
         <label class="form-label" for ="email">Email: </label>
         <input class="form-control" type = "email" id = "email" name = "email" placeholder="Ingresa tu email">
         <br>
-        <label class="form-label" for ="dpi_usuario">DPI: (Sin guiones)</label>
-        <input class="form-control" type = "number" id = "dpi_usuario" name = "dpi_usuario" placeholder="XXXXXXXXXXXXX">
+        <label class="form-label" for ="dpi_usuario">Ingresa DPI: </label>
+        <input class="form-control" type="text" placeholder="XXXX-XXXXX-XXXX" oninput="agregarGuiones(this)">
         <br>
         <label class="form-label" for = "talla_playera">Talla: </label>
         <select class="form-control" name = "menu_talla" id = "dropdown_talla">
@@ -37,5 +37,6 @@
         <input class="btn btn-secondary" type ="submit" value ="Enviar">
         </form>
         <button class="btn btn-primary" onclick = "window.location.href = 'inicio.html'">Inicio</button>
+        <script src="js/agregarguiones.js"></script>
     </body>
 </html>
