@@ -13,17 +13,12 @@
         <p></p>
         <label class="form-label" >Ingresa tu carnet</label><br/>
         <br/>
-        <label class="form-label" >Ingresa el codigo de tu carrera</label><br/>
-        <input class="form-control" type="text"  placeholder="Ej: 1490">
-        <br/>
-        <label class="form-label" >Ingresa el anio de tu carnet: </label><br/>
-        <input class="form-control" type="text"  placeholder="YY">
-        <br/>
-        <label class="form-label" >Ingresa tu correlativo: </label><br/>
-        <input class="form-control" type="text"  placeholder="XXXX">
+        <label class="form-label" for ="carnet_uni">Ingresa tu carnet de la  Universidad: </label>
+        <input class="form-control" type = "text" id = "carnet_universidad" name = "carnet_universidad" placeholder="Ej: 1490-00-1234" oninput="agregarEnCarnet(this)">
         <br/>
         <button class="btn btn-dark" onclick = "alert('consulta de estudiante')">Consulta</button>
         <br/>
         <button class="btn btn-primary" onclick = "window.location.href = 'inicio.html'">Inicio</button>
+        <script src="js/agregarguiones.js"></script>
     </body>
 </html>
