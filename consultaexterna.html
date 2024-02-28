@@ -12,10 +12,11 @@
         <h1>Consulta externa</h1>
         <p></p>
         <label>Ingresa tu DPI</label><br/>
-        <input class="form-control" type="text" placeholder="XXXX-XXXXX-XXXX">
+        <input class="form-control" type="text" placeholder="XXXX-XXXXX-XXXX" oninput="agregarGuiones(this)">
         <br/><br/>
 
         <button class="btn btn-dark" onclick="alert('esta es tu consulta')">Consulta</button>
         <button class="btn btn-primary" onclick = "window.location.href = 'inicio.html'">Inicio</button>
+        <script src="js/agregarguiones.js"></script>
     </body>
 </html>
