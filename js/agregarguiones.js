@@ -8,3 +8,9 @@ function agregarGuiones(campo) {
     // Actualizar el valor del campo
     campo.value = valorConGuiones;
   }
+
+  function agregarEnCarnet(campo2){
+    const valorActualCarnet = campo2.value;
+    const valorConGuionesCarnet = valorActualCarnet.replace(/(\d{4})(\d{2})/g, "$1-$2-");
+    campo2.value = valorConGuionesCarnet;
+  }

@@ -18,14 +18,8 @@
         <label class="form-label" for ="email">Email: </label>
         <input class="form-control" type = "email" id = "email" name = "email" placeholder="Ingresa tu email">
         <br>
-        <label class="form-label" for ="codigo_carrera">Codigo carrera: </label>
-        <input class="form-control" type = "number" id = "codigo_carrera" name = "codigo_carrera" min = "1000" max = "9999" placeholder="Ej: 1490">
-        <br>
-        <label class="form-label" for ="anio">anio de carne: </label>
-        <input class="form-control" type = "number" id = "badge_number" name = "badge_number" min = "01" max = "99" placeholder="Ej: 24">
-        <br>
-        <label class="form-label" for ="numero_estudiante">Correlativo: </label>
-        <input class="form-control" type = "number" id = "correlativo" name = "correlativo" placeholder="1490-24-****">
+        <label class="form-label" for ="carnet_uni">Codigo carrera: </label>
+        <input class="form-control" type = "text" id = "codigo_carrera" name = "codigo_carrera" placeholder="Ej: 1490-00-1234" oninput="agregarEnCarnet(this)">
         <br/>
         <label class="form-label" for = "talla_playera">Talla: </label>
         <select class="form-control" name = "menu_talla" id = "dropdown_talla">
@@ -44,5 +38,6 @@
         <input class="btn btn-dark" type ="submit" value ="Enviar">
         </form>
         <button class="btn btn-primary" onclick = "window.location.href = 'inicio.html'">Inicio</button>
+        <script src="js/agregarguiones.js"></script>
     </body>
 </html>
