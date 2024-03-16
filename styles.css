@@ -1,0 +1,6 @@
+body{
+    background-image: url("imagenes/Umg.png"), url("imagenes/FondoCeleste.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: 50%;
+    background-size: 10%, cover;
+}
