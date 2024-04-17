@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1>Formulario de inscripcion</h1>
-        <form id = 'formulario_estudiante' action =/php/conexion_estudiante.php" method = "post">
+        <form id = 'formulario_estudiante' action = 'php/pruebaformulario.php' method = "post">
         <label class="form-label" for ="nombre">Nombre: </label>
         <input class="form-control" type = "text" id = "nombre" name = "nombre" placeholder="Ingresa tu nombre">
         <br>
@@ -23,7 +23,7 @@
         <input class="form-control" type = "text" id = "carnet_universidad" name = "carnet_universidad" placeholder="Ej: 1490-00-1234" oninput="agregarEnCarnet(this)">
         <br/>
         <label class="form-label" for = "talla_playera">Talla: </label>
-        <select class="form-control" name = "menu_talla" id = "dropdown_talla">
+        <select class="form-control" name = "menu_talla" id = "menu_talla">
             <option value="testing">-</option>
             <option value="12">12</option>
             <option value="14">14</option>
