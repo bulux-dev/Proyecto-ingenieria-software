@@ -10,7 +10,7 @@ $password = "admin";
 $nombre = $_POST["nombre"];
 $email = $_POST["email"];
 $carnet_universidad = $_POST["carnet_universidad"];
-$talla_playera = $_POST["menu_talla"];
+$talla_playera = $_POST["dropdown_talla"];
 
 try {
   // Connect to the database
@@ -19,7 +19,7 @@ try {
 
   // Prepare SQL statement
   $sql = "INSERT INTO estudiantes_inscritos (nombre, email, carnet_universidad, talla_playera) 
-          VALUES (:nombre, :email, :carnet_universidad, :talla_playera)";
+          VALUES ('$nombre', '$email', '$carnet_universidad', '$talla_playera')";
   $stmt = $conn->prepare($sql);
 
   // Bind parameters to prevent SQL injection
