@@ -18,7 +18,7 @@ if (!$stmt) {
 
 // **Optional: Data Validation**
 // Validate $carnet and $boleta here based on your requirements
-$carnet = mysqli_real_escape_string($connection, $_REQUEST["carnet_to_add"]);
+$carnet = mysqli_real_escape_string($connection, $_REQUEST["asd"]);
 
 $boleta = intval($_REQUEST['boleta_code']);
 
