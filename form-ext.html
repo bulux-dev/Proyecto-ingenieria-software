@@ -11,7 +11,7 @@
     </head>
     <body>
         <h1>Formulario de inscripcion</h1>
-        <form action =/action_page.php" method = "post">
+        <form action = "NSInscripcion.php" method = "post">
         <label class="form-label" for ="nombre">Nombre: </label>
         <input class="form-control" type = "text" id = "nombre" name = "nombre" placeholder="Ingresa tu nombre">
         <br>
@@ -19,10 +19,10 @@
         <input class="form-control" type = "email" id = "email" name = "email" placeholder="Ingresa tu email">
         <br>
         <label class="form-label" for ="dpi_usuario">Ingresa DPI: </label>
-        <input class="form-control" type="text" placeholder="XXXX-XXXXX-XXXX" oninput="agregarGuiones(this)">
+        <input class="form-control" type="text"  id = "DPI" name = "DPI" placeholder="XXXX-XXXXX-XXXX" oninput="agregarGuiones(this)">
         <br>
         <label class="form-label" for = "talla_playera">Talla: </label>
-        <select class="form-control" name = "menu_talla" id = "dropdown_talla">
+        <select class="form-control" name = "talla" id = "talla"> 
             <option value="testing">-</option>
             <option value="12">12</option>
             <option value="14">14</option>
@@ -38,7 +38,7 @@
         <input class="btn btn-secondary" type ="submit" value ="Enviar">
         </form>
         <button class="btn btn-primary" onclick = "window.location.href = 'inicio.html'">Inicio</button>
-        <label>Hola</label>
+        
         <script src="js/agregarguiones.js"></script>
     </body>
 </html>
