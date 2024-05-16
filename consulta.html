@@ -11,14 +11,16 @@
     </head>
     <body>
         <h1>Consulta</h1>
-        <p></p>
-        <label class="form-label" >Ingresa tu carnet</label><br/>
-        <br/>
-        <label class="form-label" for ="carnet_uni">Ingresa tu carnet de la  Universidad: </label>
-        <input class="form-control" type = "text" id = "carnet_universidad" name = "carnet_universidad" placeholder="Ej: 1490-00-1234" oninput="agregarEnCarnet(this)">
-        <br/>
-        <button class="btn btn-dark" onclick = "alert('consulta de estudiante')">Consulta</button>
-        <br/>
+        <form id = "formulario-constancia-ins" action="confir-int.php">
+            <p></p>
+            <label class="form-label" >Ingresa tu carnet</label><br/>
+            <br/>
+            <label class="form-label" for ="carnet_uni">Ingresa tu carnet de la  Universidad: </label>
+            <input class="form-control" type = "text" id = "carnet" name = "carnet" placeholder="Ej: 1490-00-1234" oninput="agregarEnCarnet(this)" required>
+            <br/>
+            <button class="btn btn-dark" type="submit">Consulta</button>
+            <br/>
+        </form>
         <button class="btn btn-primary" onclick = "window.location.href = 'inicio.html'">Inicio</button>
         <script src="js/agregarguiones.js"></script>
     </body>

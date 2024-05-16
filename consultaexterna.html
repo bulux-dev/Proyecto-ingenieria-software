@@ -11,12 +11,13 @@
     </head>
     <body>
         <h1>Consulta externa</h1>
-        <p></p>
-        <label>Ingresa tu DPI</label><br/>
-        <input class="form-control" type="text" placeholder="XXXX-XXXXX-XXXX" oninput="agregarGuiones(this)">
-        <br/><br/>
-
-        <button class="btn btn-dark" onclick="alert('esta es tu consulta')">Consulta</button>
+        <form id = 'consulta-externa-dpi' action = "const-ext.php">
+            <p></p>
+            <label>Ingresa tu DPI</label><br/>
+            <input class="form-control" type="text" id = "DPI" name = "DPI" placeholder="XXXX-XXXXX-XXXX" oninput="agregarGuiones(this)" required>
+            <br/><br/>
+            <button class="btn btn-dark" type = "submit" >Consulta</button>
+        </form>
         <button class="btn btn-primary" onclick = "window.location.href = 'inicio.html'">Inicio</button>
         <script src="js/agregarguiones.js"></script>
     </body>

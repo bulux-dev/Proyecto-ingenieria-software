@@ -14,13 +14,13 @@
         <h1>Formulario de inscripcion</h1>
         <form id = 'formulario_estudiante' action = 'inscripcionestudiante.php'>
         <label class="form-label" for ="nombre">Nombre: </label>
-        <input class="form-control" type = "text" id = "nombre" name = "nombre" placeholder="Ingresa tu nombre">
+        <input class="form-control" type = "text" id = "nombre" name = "nombre" placeholder="Ingresa tu nombre" required>
         <br>
         <label class="form-label" for ="email">Email: </label>
-        <input class="form-control" type = "email" id = "email" name = "email" placeholder="Ingresa tu email">
+        <input class="form-control" type = "email" id = "email" name = "email" placeholder="Ingresa tu email" required>
         <br>
         <label class="form-label" for ="carnet_uni">Carnet Universidad: </label>
-        <input class="form-control" type = "text" id = "carnet" name = "carnet" placeholder="Ej: 1490-00-1234" oninput="agregarEnCarnet(this)">
+        <input class="form-control" type = "text" id = "carnet" name = "carnet" placeholder="Ej: 1490-00-1234" oninput="agregarEnCarnet(this)" required>
         <br/>
         <label class="form-label" for = "talla_playera">Talla: </label>
         <select class="form-control" name = "talla" id = "talla">
