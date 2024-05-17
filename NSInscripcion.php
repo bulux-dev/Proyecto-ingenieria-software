@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "inscripcion_estudiante";
+$servername = "sql113.infinityfree.com";
+$username = "if0_36562686";
+$password = "Y5miUappmv";
+$dbname = "if0_36562686_inscripcion_estudiante	";
 
 $connection = new mysqli($servername,$username,$password,$dbname);
 
