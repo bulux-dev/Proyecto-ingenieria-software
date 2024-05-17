@@ -2,7 +2,7 @@
 $servername = "sql113.infinityfree.com";
 $username = "if0_36562686";
 $password = "Y5miUappmv"; // Replace with your actual password
-$dbname = "if0_36562686_inscripcion_estudiante	";
+$dbname = "if0_36562686_inscripcion_estudiante";
 
 $connection = new mysqli($servername,$username,$password,$dbname);
 
